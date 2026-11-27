@@ -1,0 +1,9 @@
+project,area,status,public_repo_url,canonical_doc
+NEXUS-LAB,infrastructure,active,,PROJECTS/NEXUS-LAB.md
+Linux Hardening,security-engineering,documented,,PROJECTS/HARDENING-FLINT2.md
+Flint 2,network-security,troubleshooting,,PROJECTS/HARDENING-FLINT2.md
+Wazuh Suricata,security-monitoring,partial-validation,,PROJECTS/WAZUH-SURICATA.md
+NEXUS-HARDENER,security-engineering,planned,,PROJECTS/NEXUS-HARDENER.md
+NEXI,local-ai,prototype,,PROJECTS/NEXI.md
+NEXUS-WEBSEC,appsec,in-development,,PROJECTS/NEXUS-WEBSEC.md
+ALFCYBERCOP.PT,website,in-development,,PROJECTS/WEBSITE.md

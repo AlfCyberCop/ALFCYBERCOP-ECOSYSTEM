@@ -1,0 +1,13 @@
+name: Docs validation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate local Markdown links and catalog
+        run: python3 tools/validate_repo.py
