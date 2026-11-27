@@ -1,16 +1,49 @@
-# Meet the NEXUS Team
+<div align="center">
 
-A história do ALFCYBERCOP inclui uma colaboração com IA, mas **o responsável técnico e autor dos projetos é ALFCYBERCOP**. Os nomes abaixo designam papéis de trabalho, **não pessoas nem agentes independentes**.
+# 🤝 MEET THE NEXUS TEAM
 
-| Nome | Papel editorial e técnico |
-|---|---|
-| **NEXUS** | Arquitetura, integração e visão de sistemas |
-| **NEXIUS** | Engenharia, desenvolvimento e documentação |
-| **NEDEX** | Investigação defensiva/ofensiva em laboratório, verificação e evidência |
-| **NEXI** | Software local em desenvolvimento; assistente a recuperar e integrar |
+**Human-led engineering. AI-assisted thinking.**
 
-## A colaboração também teve uma timeline
+[🏠 ECOSYSTEM](../README.md) · [🌌 THE JOURNEY](../THE-JOURNEY/README.md) · [🧪 PROJETOS](../PROJECTS/README.md)
 
-Nos primeiros meses, o contexto entre conversas era limitado. Muitas decisões tinham de ser reconstruídas e as ideias debatidas novamente. A história deve mencionar esse limite de forma honesta. As datas e citações recuperadas carecem de conferência nos originais.
+</div>
 
-[Origens](../THE-JOURNEY/docs/01-origins.md) · [NEXI Reborn](../PROJECTS/NEXI.md)
+---
+
+## 👤 O autor e operador
+
+**ALFCYBERCOP** decide, desenha, executa, valida e documenta o trabalho. Os projetos cruzam a experiência em **Unix/Linux, desenvolvimento e operações** com experiências controladas de **cibersegurança, deteção e hardening**.
+
+O resto da equipa são **papéis de colaboração com IA** para discutir hipóteses, rever alternativas e organizar documentação. **Não são pessoas nem agentes autónomos com acesso operacional ao laboratório.**
+
+## 🧠 Papéis de colaboração
+
+| Identidade | Foco | Pergunta típica |
+|:--|:--|:--|
+| **NEXUS** 🧭 | Arquitetura, integração e visão de sistemas | *Como é que as peças se ligam?* |
+| **NEXIUS** 🛠️ | Engenharia, desenvolvimento e documentação | *Como construímos e validamos isto?* |
+| **NEDEX** 🔎 | Pesquisa, hipóteses, testes e evidência | *O que conseguimos realmente provar?* |
+| **NEXI** 🌱 | Projeto de assistente local em recuperação | *Que funcionalidades podem ser demonstradas num protótipo?* |
+
+> **Nota:** NEXI é **software em desenvolvimento**, não uma quarta IA independente já em produção. A sua beta histórica e integração ainda necessitam de revisão e reteste.
+
+## 🔁 Como trabalhamos
+
+```mermaid
+flowchart LR
+    A[ALFCYBERCOP: objetivo e decisão] --> B[Explorar hipóteses com IA]
+    B --> C[Implementar e testar no laboratório]
+    C --> D[Analisar resultados]
+    D --> E[Documentar fontes e limites]
+    E --> A
+```
+
+O histórico inclui conversas com contexto limitado, decisões reconstruídas e correções feitas depois de novos testes. Não escondemos essas limitações nem atribuímos resultados a operadores inexistentes.
+
+## 📖 Explora a história
+
+[Como nasceu NEXUS](../THE-JOURNEY/docs/01-origins.md) · [NEXI Reborn](../PROJECTS/NEXI.md) · [Guia editorial](../docs/EDITORIAL.md)
+
+---
+
+[← Voltar ao ECOSYSTEM](../README.md)

@@ -1,68 +1,94 @@
-# ALFCYBERCOP ECOSYSTEM 🛡️
+<div align="center">
 
-### *Beyond Tools. Into Understanding.*
+# 🛡️ ALFCYBERCOP ECOSYSTEM
 
-> **Não é sobre instalar ferramentas. É sobre compreender sistemas, provocar as perguntas certas, detetar problemas e demonstrar as soluções.**
+### Beyond Tools. Into Understanding.
 
-**Uma viagem de engenharia: curiosidade → laboratório → experiências controladas → deteção → correção → evidência → melhoria.**
+**Engenharia de sistemas × Cibersegurança × Investigação prática**
 
-Este não é um catálogo de software. É o registo da construção de um ecossistema de cibersegurança liderado por **ALFCYBERCOP**, onde uma carreira em sistemas, desenvolvimento e operações se encontra com a investigação prática em segurança. A nossa história inclui decisões acertadas, erros, regressões, noites de troubleshooting e perguntas que ainda não têm resposta.
+*Um laboratório real. Perguntas difíceis. Erros documentados. Resultados com evidência.*
 
-> **Estado deste repositório:** preparação editorial e técnica; não equivale a declarar todos os sistemas e integrações em produção.
+[**🌌 THE JOURNEY**](THE-JOURNEY/README.md) · [**🧪 PROJETOS**](PROJECTS/README.md) · [**🔎 SECURITY RESEARCH**](SECURITY-RESEARCH/README.md) · [**🤝 EQUIPA**](TEAM/README.md)
 
-## Entra por onde quiseres
+![Linux](https://img.shields.io/badge/Linux-Engineering-111827?style=flat-square&logo=linux&logoColor=white)
+![Detection](https://img.shields.io/badge/SIEM-Detection_Engineering-0f766e?style=flat-square)
+![Network](https://img.shields.io/badge/Network-IDS_%26_Security-1d4ed8?style=flat-square)
+![AppSec](https://img.shields.io/badge/AppSec-Research-7c3aed?style=flat-square)
 
-| Camada | O que vais encontrar | Ler |
-|---|---|---|
-| **01 · The Journey** | As pessoas, as primeiras perguntas, o nascimento de NEXUS e os capítulos reais | [Começar a história](THE-JOURNEY/README.md) |
-| **02 · NEXUS-LAB** | Máquinas, topologias, serviços e evolução do laboratório | [Explorar o LAB](PROJECTS/NEXUS-LAB.md) |
-| **03 · Security Engineering** | Hardening, Flint 2 e o futuro NEXUS-HARDENER | [Engenharia](PROJECTS/HARDENING-FLINT2.md) |
-| **04 · Security Research** | Testes autorizados, deteção, aplicações vulneráveis e forense | [Investigação](SECURITY-RESEARCH/README.md) |
-| **05 · NEXI & The Team** | Colaboração com IA e a futura assistente local | [Conhecer a equipa](TEAM/README.md) |
-| **06 · Evidence & Integration** | Provas, rastreabilidade, ligações entre projetos e website | [Integrações](INTEGRATIONS/README.md) |
+</div>
 
-## A jornada em marcos
+---
+
+> **«Não é sobre instalar ferramentas. É sobre compreender sistemas, provocar as perguntas certas, detetar problemas e demonstrar as soluções.»**
+
+O **ALFCYBERCOP ECOSYSTEM** reúne a evolução de um laboratório de cibersegurança construído a partir de experiência em **sistemas, desenvolvimento e operações**. Não é um catálogo de tecnologias: é uma história de decisões, experiências controladas, troubleshooting e validações.
+
+**O princípio:** *a história explica porquê; os projetos descrevem como; as evidências mostram o que foi observado.*
+
+## ⚡ O que já conseguimos observar
+
+| Área | Resultado documentado | Limite importante |
+|:--|:--|:--|
+| **Linux Hardening** | Evolução de registos Lynis de **59/100 (3.0.7)** até **97/100 (3.1.7)** | Versões e testes diferentes: **não** significa «97% seguro» nem comparação homogénea |
+| **Suricata IDS** | **8.0.8**, **53 603 regras** carregadas e captura HTTP no laboratório | Não demonstra IPS em linha nem cobertura da rede inteira |
+| **Wazuh** | Num teste ICMP específico, **4 eventos observados e 4 recebidos** | Resultado daquele cenário, não garantia geral de deteção |
+| **Flint 2** | Integração do router na arquitetura e investigação da rede | Cobertura/desempenho Wi-Fi ainda com problemas a resolver |
+
+**Ler os casos:** [Hardening + Flint 2](PROJECTS/HARDENING-FLINT2.md) · [Wazuh + Suricata](PROJECTS/WAZUH-SURICATA.md) · [NEXUS-LAB](PROJECTS/NEXUS-LAB.md)
+
+## 🧭 Escolhe por onde entrar
+
+| | Percurso | O que encontras |
+|:--:|:--|:--|
+| 🌌 | **[THE JOURNEY](THE-JOURNEY/README.md)** | Capítulos, marcos, dúvidas, regressões e a origem de NEXUS |
+| 🖥️ | **[NEXUS-LAB](PROJECTS/NEXUS-LAB.md)** | Infraestrutura, virtualização, serviços e escolhas de arquitetura |
+| 🛡️ | **[SECURITY ENGINEERING](PROJECTS/README.md)** | Hardening, router, IDS, deteção e ferramentas planeadas |
+| 🔬 | **[SECURITY RESEARCH](SECURITY-RESEARCH/README.md)** | AppSec, SOC, forense, IR e metodologia experimental |
+| 🤝 | **[THE TEAM](TEAM/README.md)** | ALFCYBERCOP, colaboração com IA e o projeto NEXI |
+| 🧩 | **[INTEGRATIONS](INTEGRATIONS/README.md)** | Relação entre website, repositórios técnicos e evidências |
+
+## 🔄 Do problema à evidência
 
 ```mermaid
 flowchart LR
-    A[Curiosidade e experiência IT] --> B[AlfCyberCop & NEXUS]
-    B --> C[NEXUS-LAB: sistemas e rede]
-    C --> D[Experiências e investigação]
-    D --> E[Wazuh e Suricata IDS]
-    E --> F[Hardening + Flint 2]
-    F --> G{Medição e validação}
-    G -->|Problemas| H[Troubleshooting documentado]
-    H --> G
-    G -->|Evidências| I[NEXUS-HARDENER / NEXI / LAB TOP]
+    A[Observar] --> B[Formular hipótese]
+    B --> C[Testar no laboratório]
+    C --> D[Recolher eventos]
+    D --> E{Resultado comprovado?}
+    E -->|Ainda não| F[Diagnosticar e corrigir]
+    F --> C
+    E -->|Sim| G[Documentar limites e provas]
 ```
 
-[Timeline completa](THE-JOURNEY/TIMELINE.md) · [Roadmap técnico](ROADMAP.md) · [Registo de evidências](EVIDENCE/EVIDENCE-REGISTER.md)
+É assim que tratamos uma regressão do Lynis, um alerta Wazuh, um comportamento inesperado do Suricata ou uma divisão da casa onde o Wi-Fi piorou. **Os problemas fazem parte do portefólio.**
 
-## O trabalho invisível
+## 📖 A jornada também tem horas invisíveis
 
 ![Estimativa histórica de esforço por área de trabalho](THE-JOURNEY/assets/hours-estimate.svg)
 
-**355–645 horas**: intervalo de esforço reconstruído de conversas, **não horas cronometradas**. As categorias podem sobrepor-se e os valores não devem ser usados como total de trabalho comprovado. [Metodologia](THE-JOURNEY/effort-method.md).
+**355–645 horas** é um intervalo **reconstruído historicamente**, não tempo cronometrado. As categorias podem sobrepor-se e os valores não são horas certificadas. [Como foi estimado](THE-JOURNEY/effort-method.md).
 
-## Um exemplo de como pensamos
+## 🚧 O que está em construção
 
-**O Wi-Fi do Flint 2 ficou pior em algumas divisões.** Não vamos apagar esse episódio. O servidor podia estar mais protegido e, simultaneamente, a experiência de rede da casa ter piorado. O que interessa é medir, diagnosticar, comparar opções e voltar a testar, sem fazer depender a Internet doméstica de uma VM Kali que pode estar desligada.
+- **[NEXUS-HARDENER](PROJECTS/NEXUS-HARDENER.md)** — futura ferramenta modular de hardening com pré-validação, backups, testes e rollback; **não declarada concluída**.
+- **[NEXI](PROJECTS/NEXI.md)** — assistente local com beta histórica; recuperação e integração por validar.
+- **[NEXUS-LAB TOP](ROADMAP.md)** — evolução da virtualização e da arquitetura defensiva.
+- **[alfcybercop.pt](PROJECTS/WEBSITE.md)** — identidade digital e website em desenvolvimento.
 
-**O mesmo método aplica-se ao hardening:** o resultado final registado pelo Lynis foi **97/100**, mas a versão de Lynis e as opções de auditoria mudaram durante o processo. Não é uma percentagem de segurança nem uma comparação integralmente homogénea. O troubleshooting e a recuperação dos serviços fazem parte do resultado.
+## 👤 Quem está por trás
 
-## Quem constrói
+**ALFCYBERCOP** é o autor e responsável pelas decisões, configurações e testes. **NEXUS, NEXIUS e NEDEX** são papéis de colaboração com IA; não são operadores autónomos do laboratório. [Conhecer a equipa](TEAM/README.md).
 
-- **ALFCYBERCOP:** autor, operador e responsável pelas decisões, execuções e validações.
-- **NEXUS · NEXIUS · NEDEX:** papéis de colaboração com IA para arquitetura, engenharia e pesquisa/testes. Não são pessoas nem agentes que operem autonomamente o laboratório.
-- **NEXI:** projeto separado de assistente local; beta histórica, evolução por validar. [Ler](PROJECTS/NEXI.md).
+Este repositório é **documentação viva**: distinguimos *confirmado*, *reconstruído*, *protótipo* e *planeado*. Evidências públicas são selecionadas e sanitizadas. [Política de publicação](EVIDENCE/PUBLICATION-POLICY.md).
 
-**Website:** [alfcybercop.pt](https://www.alfcybercop.pt) · **GitHub:** [perfil AlfCyberCop](https://github.com/AlfCyberCop)
+---
 
-## Compromissos
+<div align="center">
 
-1. As fontes distinguem **feito, testado, documentado, protótipo e planeado**.
-2. Não publicar credenciais, backups, chaves, dados pessoais ou topologias internas completas.
-3. Não copiar relatórios académicos integrais nem códigos vulneráveis sem revisão e contextualização.
-4. A história explica **porquê**; os projetos descrevem **como**; as evidências demonstram **o que aconteceu**.
+**[🌌 Começar a história](THE-JOURNEY/README.md) · [🧪 Explorar projetos](PROJECTS/README.md) · [🗓️ Consultar o roadmap](ROADMAP.md)**
 
-**Começar:** [THE JOURNEY](THE-JOURNEY/README.md) · [Catálogo de projetos](PROJECTS/README.md) · [Guia de instalação no Windows](docs/INSTALAR-EM-E.md)
+[GitHub · AlfCyberCop](https://github.com/AlfCyberCop) · [Website · alfcybercop.pt](https://www.alfcybercop.pt)
+
+*Beyond tools. Into understanding.*
+
+</div>
