@@ -1,15 +1,62 @@
-# Catálogo de projetos
+<div align="center">
 
-**Estado técnico não é estado editorial.** Um sistema pode estar ativo e ainda não ter documentação pronta para divulgação.
+# 🧪 PROJECTS / ENGINEERING
 
-| Projeto | Competências | Estado real conhecido | Detalhes |
-|---|---|---|---|
-| NEXUS-LAB | Linux, redes, VirtualBox, Nginx, PostgreSQL | Infraestrutura operacional com evolução contínua | [Abrir](NEXUS-LAB.md) |
-| Hardening + Flint 2 | Linux hardening, firewall, redes, troubleshooting | Hardening documentado; Wi-Fi Flint 2 ainda em investigação | [Abrir](HARDENING-FLINT2.md) |
-| Wazuh + Suricata | SIEM, IDS, logs JSON | Deteções e captura demonstradas; IPS geral não validado | [Abrir](WAZUH-SURICATA.md) |
-| NEXUS-HARDENER | Bash, engenharia defensiva, rollback | **Produto planeado** | [Abrir](NEXUS-HARDENER.md) |
-| NEXI | Aplicação local, IA, PostgreSQL, RBAC | Beta histórica, recuperação pendente | [Abrir](NEXI.md) |
-| alfcybercop.pt | Domínio, Nginx, HTTPS, TLS, publicação web | Infraestrutura HTTPS documentada; site em desenvolvimento | [Abrir](WEBSITE.md) |
-| NEXUS-WEBSEC LAB | AppSec, SSTI, SSRF, desserialização | Laboratórios e investigação em evolução | [Abrir](NEXUS-WEBSEC.md) |
+**Da infraestrutura à deteção. Da hipótese ao reteste.**
 
-Ver também [Security Research](../SECURITY-RESEARCH/README.md) e [Integrações](../INTEGRATIONS/README.md).
+[🏠 ECOSYSTEM](../README.md) · [🌌 THE JOURNEY](../THE-JOURNEY/README.md) · [📍 ROADMAP](../ROADMAP.md)
+
+</div>
+
+---
+
+Este é o mapa dos projetos técnicos do **ALFCYBERCOP ECOSYSTEM**. Cada ficha separa **o que foi observado** do que está **em desenvolvimento ou planeado**. Um serviço ativo não significa que toda a arquitetura foi validada; documentação pronta não significa produto final.
+
+## 🖥️ Infraestrutura e rede
+
+| Projeto | O que resolve | Situação documentada |
+|:--|:--|:--|
+| **[NEXUS-LAB](NEXUS-LAB.md)** | Linux, VirtualBox, Nginx, PostgreSQL, redes e ambientes de teste | 🟢 Infraestrutura operacional e em evolução |
+| **[Hardening + Flint 2](HARDENING-FLINT2.md)** | Proteção do host, controlo da rede e troubleshooting | 🟢 Hardening registado · 🟠 Wi-Fi em investigação |
+| **[Website / alfcybercop.pt](WEBSITE.md)** | Identidade digital, domínio, HTTPS e publicação | 🟠 Infraestrutura web documentada; conteúdo em construção |
+
+## 🔎 Deteção e investigação
+
+| Projeto | O que explora | Situação documentada |
+|:--|:--|:--|
+| **[Wazuh + Suricata](WAZUH-SURICATA.md)** | SIEM, eventos, IDS, JSON e validação de alertas | 🟢 Capturas e testes específicos demonstrados · 🟠 IPS por validar |
+| **[NEXUS-WEBSEC LAB](NEXUS-WEBSEC.md)** | SSTI, SSRF, desserialização insegura e correções | 🟠 Laboratórios e documentação em evolução |
+
+## 🧰 Ferramentas em desenvolvimento ou planeadas
+
+| Projeto | Direção | Estado |
+|:--|:--|:--|
+| **[NEXUS-HARDENER](NEXUS-HARDENER.md)** | Pré-check, módulos, backup, rollback e evidência | 🔵 Produto planeado |
+| **[NEXI](NEXI.md)** | Assistente local, PostgreSQL e integração autenticada | 🟠 Beta histórica; recuperação/validação pendentes |
+
+<sub>Legenda: 🟢 capacidade ou resultado específico documentado · 🟠 parcial/em investigação · 🔵 planeado. Não são certificações nem classificações de segurança.</sub>
+
+## 🎯 Três casos que mostram o método
+
+| Caso | O que aprendemos | Abrir |
+|:--|:--|:--|
+| **Lynis: melhoria e regressões** | Medir sem confundir pontuação com segurança; explicar diferenças entre versões e resolver incidentes | [Hardening](HARDENING-FLINT2.md) |
+| **4 eventos ICMP → 4 recebidos** | Distinguir a geração do evento da sua receção e correlação no Wazuh | [Detection](WAZUH-SURICATA.md) |
+| **Flint 2 e Wi-Fi inesperadamente pior** | Uma arquitetura defensiva tem de respeitar a experiência real de utilização | [Rede](HARDENING-FLINT2.md) |
+
+## 📐 Como documentamos
+
+```mermaid
+flowchart LR
+    A[Objetivo] --> B[Baseline]
+    B --> C[Teste]
+    C --> D[Resultado e evidência]
+    D --> E[Limitações]
+    E --> F[Correção e reteste]
+```
+
+Os projetos ligam-se ao **[Security Research](../SECURITY-RESEARCH/README.md)**, ao **[registo de evidências](../EVIDENCE/EVIDENCE-REGISTER.md)** e ao **[mapa de integrações](../INTEGRATIONS/README.md)**. O código técnico independente só é referenciado por URL depois de confirmado no [registo de ligações](../INTEGRATIONS/LINK-REGISTRY.md).
+
+---
+
+[← Voltar ao ECOSYSTEM](../README.md) · [Continuar em THE JOURNEY →](../THE-JOURNEY/README.md)

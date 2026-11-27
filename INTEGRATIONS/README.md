@@ -1,36 +1,58 @@
-# Integrações — uma fonte, várias vistas
+<div align="center">
 
-**Não criamos um monorepo de código que replique todos os projetos.** Este é o **repositório-mãe narrativo e de navegação**, que liga repositórios técnicos independentes, documentação e website.
+# 🧩 INTEGRATIONS
+
+**Uma história. Vários projetos. Evidência rastreável.**
+
+[🏠 ECOSYSTEM](../README.md) · [🧪 PROJETOS](../PROJECTS/README.md) · [📁 EVIDÊNCIAS](../EVIDENCE/EVIDENCE-REGISTER.md)
+
+</div>
+
+---
+
+O **ALFCYBERCOP ECOSYSTEM** é o **repositório-mãe narrativo**. Não pretende copiar integralmente o código de todas as iniciativas para um monorepo. O seu trabalho é ligar **identidade pública, história, projetos independentes, documentação e provas** de forma verificável.
+
+## 🗺️ Como as peças se relacionam
 
 ```mermaid
 flowchart TD
- A[ALFCYBERCOP / identidade] --> B[The Journey / narrativa]
- A --> C[alfcybercop.pt / montra]
- B --> D[NEXUS-LAB / laboratório]
- D --> E[Hardening + Flint 2]
- D --> F[Wazuh / Suricata / Security Research]
- E --> G[NEXUS-HARDENER / ferramenta futura]
- D --> H[NEXI / assistente futura]
- E -. provas .-> I[Evidence Register]
- F -. provas .-> I
- G -. documentação .-> I
- C -. links validados .-> B
- B -. referências .-> J[Repositórios técnicos próprios]
+    A[ALFCYBERCOP / identidade] --> B[THE JOURNEY / narrativa]
+    A --> C[alfcybercop.pt / website]
+    B --> D[NEXUS-LAB / infraestrutura]
+    D --> E[Hardening e Flint 2]
+    D --> F[Wazuh, Suricata e investigação]
+    E -. evidências .-> G[Evidence Register]
+    F -. evidências .-> G
+    B --> H[Projetos e repositórios técnicos]
+    E -. evolução futura .-> I[NEXUS-HARDENER]
+    D -. evolução futura .-> J[NEXI]
+    C -. links revistos .-> B
 ```
 
-## 5 camadas práticas
+*Esquema editorial: ligações e planos não implicam integrações técnicas já implementadas.*
 
-1. **Identidade pública:** perfil GitHub + `alfcybercop.pt`.
-2. **Narrativa:** episódios que explicam *porquê* e a ordem dos factos.
-3. **Projetos:** fichas técnicas e repositórios separados que explicam *como*.
-4. **Evidência:** logs e prints **selecionados e sanitizados** que mostram *o que se comprovou*.
-5. **Automação:** links, catálogo de projetos, verificadores e, futuramente, NEXI como interface.
+## 🧱 As cinco camadas
 
-## Política de ligações
+| Camada | Responsabilidade | Referência |
+|:--|:--|:--|
+| **01 · Identidade** | Perfil e website como pontos públicos de entrada | [GitHub](https://github.com/AlfCyberCop) · [Website](../PROJECTS/WEBSITE.md) |
+| **02 · Narrativa** | Contexto, datas, decisões e aprendizagem | [THE JOURNEY](../THE-JOURNEY/README.md) |
+| **03 · Engenharia** | Fichas técnicas e ligação a projetos independentes | [Catálogo](../PROJECTS/README.md) |
+| **04 · Evidências** | O que foi observado, fontes e limites | [Registo](../EVIDENCE/EVIDENCE-REGISTER.md) |
+| **05 · Automação** | Índices, catálogos, verificações e futuras interfaces | [Roadmap](../ROADMAP.md) |
 
-- Não inventar links para repositórios só porque conhecemos o título.
-- O Hardening já tem trabalho próprio; manter documentação original e relacioná-la com a história por link **após confirmar URL**.
-- Não copiar ficheiros secretos/privados para este repositório.
-- Novos projetos têm de indicar `estado`, `prova`, `limite` e `próxima validação`.
+## ✅ Regras de integração
 
-[Registo de URLs](LINK-REGISTRY.md) · [Catálogo estruturado](project-catalog.csv) · [Política de evidências](../EVIDENCE/PUBLICATION-POLICY.md)
+- **Não inventar URLs:** um repositório técnico só ganha link após confirmação.
+- **Não duplicar segredos ou backups:** os originais sensíveis permanecem fora do Git.
+- **Declarar o estado real:** `confirmado`, `reconstruído`, `protótipo` ou `planeado`.
+- **Ligar prova e limite:** um resultado técnico precisa de contexto, data e interpretação.
+- **Preservar a independência:** o repositório narrativo aponta para código e documentação próprios sem fingir que os substitui.
+
+## 🔗 Registos
+
+[URLs verificadas e pendentes](LINK-REGISTRY.md) · [Catálogo estruturado](project-catalog.csv) · [Política de publicação](../EVIDENCE/PUBLICATION-POLICY.md)
+
+---
+
+[← Voltar ao ECOSYSTEM](../README.md)
